@@ -389,14 +389,15 @@ footer {
 
 /* ================= RESPONSIVE ================= */
 
+/* ================= RESPONSIVE ================= */
+
 @media (max-width: 768px) {
 
     header {
-        flex-direction: row;
-        justify-content: space-between;
         padding: 15px 20px;
     }
 
+    /* NAV MOBILE */
     nav {
         position: absolute;
         top: 75px;
@@ -421,11 +422,37 @@ footer {
         display: flex;
     }
 
-    .hero-container,
+    /* HERO MOBILE */
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* ABOUT MOBILE */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text h2::after {
+        margin: 12px auto 0;
+    }
+
+    .about-stats {
+        flex-direction: column;
+    }
+
+    .about-image img {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    /* GALLERY MOBILE */
     .gallery-container {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* SECTION PADDING */
     #home,
     #about,
     #services,
