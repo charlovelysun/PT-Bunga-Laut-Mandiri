@@ -4,8 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bungalautmandiri.com</title>
+
+    <title>PT Bunga Laut Mandiri | Shipping Agency Indonesia</title>
+
+    <meta name="description"
+        content="PT Bunga Laut Mandiri adalah perusahaan shipping agency dan maritime logistics di Indonesia yang menyediakan layanan cruise ship, freight forwarding, dan stevedoring.">
+
+    <meta name="keywords"
+        content="shipping agency indonesia, freight forwarding indonesia, maritime logistics indonesia, PT Bunga Laut Mandiri">
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -16,30 +25,42 @@
 
         <nav id="nav-menu">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                <li><a href="#about" data-i18n="nav_about">About</a></li>
+                <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                <li><a href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
             </ul>
+            <div class="language-dropdown">
+
+                <button class="lang-btn">
+                    🌐 <span data-i18n="nav_language">Language</span> ▾
+                </button>
+
+                <div class="lang-menu">
+                    <button data-lang="id">🇮🇩 Indonesia</button>
+                    <button data-lang="en">🇬🇧 English</button>
+                </div>
+
+            </div>
         </nav>
-       <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
 
     <section id="home">
         <div class="hero-container">
 
             <div class="hero-text">
-                <h1>Solusi Logistik & Maritime Profesional</h1>
-                <p>
+                <h1 data-i18n="hero_title">Solusi Logistik & Maritime Profesional</h1>
+                <p data-i18n="hero_text">
                     Kami menyediakan layanan pelabuhan, pengiriman, dan manajemen logistik
                     dengan standar internasional dan tim berpengalaman.
                 </p>
-                <a href="#services" class="hero-btn">Lihat Layanan</a>
+                <a href="#services" class="hero-btn" data-i18n="hero_button">Lihat Layanan</a>
             </div>
             <div class="hero-slider">
 
@@ -65,17 +86,17 @@
         <div class="about-container">
 
             <div class="about-text">
-                <h2>About PT. Bunga Laut Mandiri</h2>
+                <h2 data-i18n="about_title">About PT. Bunga Laut Mandiri</h2>
 
-                <p>
+                <p data-i18n="about_p1">
                     PT. BUNGA LAUT MANDIRI is comprised of experienced professionals
                     with strong expertise in the maritime and logistics industry.
                     We are committed to safeguarding our clients’ interests and
                     delivering reliable, high-quality shipping solutions.
                 </p>
 
-                <p>
-                    With over 15 years of management experience, we understand
+                <p data-i18n="about_p2">
+                    With over 10 years of management experience, we understand
                     the complexity and competitiveness of the maritime sector.
                     We proactively anticipate challenges and provide tailored
                     solutions that ensure efficiency and operational excellence.
@@ -83,16 +104,16 @@
 
                 <div class="about-stats">
                     <div>
-                        <h3>15+</h3>
-                        <span>Years Experience</span>
+                        <h3>10+</h3>
+                        <span data-i18n="about_exp">Years Experience</span>
                     </div>
                     <div>
                         <h3>100+</h3>
-                        <span>Port Operations</span>
+                        <span data-i18n="about_port">Port Operations</span>
                     </div>
                     <div>
                         <h3>24/7</h3>
-                        <span>Operational Support</span>
+                        <span data-i18n="about_support">Operational Support</span>
                     </div>
                 </div>
             </div>
@@ -103,232 +124,222 @@
 
         </div>
     </section>
+
     <section id="services">
-        <h2>Layanan Kami</h2>
-        <p
-            style="text-align: center; max-width: 900px; margin: 0 auto 40px; font-size: 18px; color: #dcdcdc; line-height: 1.6;">
-            PT. Bunga Laut Mandiri adalah agen maritim full-service dengan pengalaman lebih dari 15 tahun di industri
+        <h2 data-i18n="services_title">Layanan Kami</h2>
+        <p style="text-align: center; max-width: 900px; margin: 0 auto 40px; font-size: 18px; color: #dcdcdc; line-height: 1.6;"
+            data-i18n="services_desc">
+            PT. Bunga Laut Mandiri adalah agen maritim full-service dengan pengalaman lebih dari 10 tahun di industri
             pelayaran Indonesia. Kami menyediakan layanan terintegrasi untuk berbagai jenis kapal dan kebutuhan logistik
             dengan tim profesional multi-bahasa.
         </p>
 
         <div class="service-container">
-            <!-- Cruise Ship -->
+
             <div class="service-box">
-                <h3>Cruise Ship</h3>
-                <p>PT. Bunga Laut Mandiri is a full-service agency with qualified and knowledgeable personnel who have
-                    long experience in the maritime industry, both afloat and ashore.</p>
-                <p>As the longest-standing port agency for more than 15 years, we have served all types of vessels,
-                    including cruise lines. Our experienced and multi-lingual team provides full vessel attendance and
-                    ensures fast, efficient handling of all details involved in a ship’s operation in Indonesian ports.
+                <h3 data-i18n="service_cruise">Cruise Ship</h3>
+                <p data-i18n="service_cruise_p1">PT. Bunga Laut Mandiri is a full-service agency with qualified and
+                    knowledgeable personnel who have long experience in the maritime industry, both afloat and ashore.
                 </p>
+                <p data-i18n="service_cruise_p2">As the longest-standing port agency for more than 15 years, we have
+                    served all types of vessels, including cruise lines. Our experienced and multi-lingual team provides
+                    full vessel attendance and ensures fast, efficient handling of all details involved in a ship’s
+                    operation in Indonesian ports.</p>
             </div>
 
-            <!-- Shore Excursions -->
             <div class="service-box">
-                <h3>Shore Excursions</h3>
-                <p>Enjoy a leisurely island tour on an executive bus, experience an exhilarating sail on sparkling azure
-                    waters, snorkel or dive the myriad of vibrant reefs, trek through mountains, and marvel at
-                    Indonesia's geological wonders.</p>
-                <p>We provide your guests with high-quality, highly professional tours that can be customized to suit
-                    your particular needs.</p>
+                <h3 data-i18n="service_excursion">Shore Excursions</h3>
+                <p data-i18n="service_excursion_p1">Enjoy a leisurely island tour on an executive bus, experience an
+                    exhilarating sail on sparkling azure waters, snorkel or dive the myriad of vibrant reefs, trek
+                    through mountains, and marvel at Indonesia's geological wonders.</p>
+                <p data-i18n="service_excursion_p2">We provide your guests with high-quality, highly professional tours
+                    that can be customized to suit your particular needs.</p>
             </div>
 
-            <!-- Stevedoring -->
             <div class="service-box">
-                <h3>Stevedoring</h3>
-                <p>PT. Bunga Laut Mandiri provides integrated stevedoring services to industrial clients throughout the
-                    region, equipped with loading/unloading equipment tailored to the conditions of the cargo.</p>
-                <p>Together with our subsidiary companies, stevedoring is a discipline that requires support from other
-                    elements within the scope of the overall transportation industry. To enhance client satisfaction
-                    with our commitment to excellence in all processes, we have adopted the Quality Management Standard
-                    ISO 9001:2008, certified by IAPMO-USA on February 02, 2011.</p>
-                <p>Our capabilities in stevedoring, warehousing, vessel ownership of various types and ranges, ship
-                    operating, and shipping agency all contribute to the success of our company group. With our presence
-                    in major ports across Indonesia, we assure seamless stevedoring services for the benefit of our
-                    clients.</p>
+                <h3 data-i18n="service_stevedoring">Stevedoring</h3>
+                <p data-i18n="service_stevedoring_p1">PT. Bunga Laut Mandiri provides integrated stevedoring services to
+                    industrial clients throughout the region, equipped with loading/unloading equipment tailored to the
+                    conditions of the cargo.</p>
+                <p data-i18n="service_stevedoring_p2">Together with our subsidiary companies, stevedoring is a
+                    discipline that requires support from other elements within the scope of the overall transportation
+                    industry.</p>
             </div>
 
-            <!-- Freight Forwarding -->
             <div class="service-box">
-                <h3>Freight Forwarding</h3>
-                <p>We contract with carriers to facilitate the movement of goods. As experts in supply chain management,
-                    we act as a "travel agent" for the cargo industry or a third-party logistics provider to move
-                    manufactured goods.</p>
-                <p>Freight can be booked on a variety of carrier types, including ships, airplanes, trucks, and
-                    railroads. It is not unusual for a shipment to move along its route using multiple carrier types.
-                </p>
-                <p>Freight Forwarding services include:</p>
-                <ul
-                    style="padding-left: 25px; margin: 15px 0; text-align: left; list-style-type: disc; font-size: 16px;">
-                    <li>Project Logistics Planning, Design, Budgeting, and Consultancy</li>
-                    <li>Customs Clearance</li>
-                    <li>Port Handling</li>
-                    <li>Land and Sea Transportation</li>
-                    <li>Loading and Unloading</li>
-                </ul>
+                <h3 data-i18n="service_forwarding">Freight Forwarding</h3>
+                <p data-i18n="service_forwarding_p1">We contract with carriers to facilitate the movement of goods.</p>
+                <p data-i18n="service_forwarding_p2">Freight can be booked on a variety of carrier types.</p>
             </div>
 
-            <!-- Shipping Agency -->
             <div class="service-box">
-                <h3>Shipping Agency</h3>
-                <p>Shipping Agency Service involves the fulfillment of operations regarding passengers, cargo,
-                    maintenance/repair, survey, supply, crew change, loading/discharging, pilot/tugboat services, and
-                    more for naval and commercial vessels and vehicles calling at Indonesian ports.</p>
-                <p>We are experienced in handling customs formalities, clearance, excise duties, and all logistics
-                    related to the traffic of goods. We have excellent experience in yacht shipments, project
-                    facilitation, project cargoes, and local logistics.</p>
+                <h3 data-i18n="service_agency">Shipping Agency</h3>
+                <p data-i18n="service_agency_p1">Shipping Agency Service involves the fulfillment of operations
+                    regarding passengers, cargo, maintenance, supply, crew change, and more.</p>
+                <p data-i18n="service_agency_p2">We are experienced in handling customs formalities, clearance, and
+                    logistics for goods traffic.</p>
             </div>
+
         </div>
     </section>
 
     <section id="gallery">
-        <h2>Our Gallery</h2>
+        <h2 data-i18n="gallery_title">Our Gallery</h2>
         <div class="gallery-container">
+
             <div class="gallery-item">
                 <img src="img galery/Gallery01-300x200.jpg" alt="Gallery Image 1">
             </div>
+
             <div class="gallery-item">
                 <img src="img galery/Gallery02-300x200.jpg" alt="Gallery Image 2">
             </div>
+
             <div class="gallery-item">
                 <img src="img galery/Gallery03-300x200.jpg" alt="Gallery Image 3">
             </div>
+
             <div class="gallery-item">
                 <img src="img galery/Gallery04-300x200.jpg" alt="Gallery Image 4">
             </div>
+
             <div class="gallery-item">
                 <img src="img galery/Gallery05-300x200.jpg" alt="Gallery Image 5">
             </div>
+
             <div class="gallery-item">
                 <img src="img galery/Gallery07-300x200.jpg" alt="Gallery Image 7">
             </div>
+
             <div class="gallery-item">
                 <img src="img galery/Gallery08-300x200.jpg" alt="Gallery Image 8">
             </div>
+
             <div class="gallery-item">
                 <img src="img galery/Gallery09-300x200.jpg" alt="Gallery Image 9">
             </div>
+
             <div class="gallery-item">
                 <img src="img galery/Gallery10-300x200.jpg" alt="Gallery Image 10">
             </div>
+
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Us</h2>
-<form id="contact-form">
+        <h2 data-i18n="contact_title">Contact Us</h2>
+        <form id="contact-form">
 
-    <input type="text" name="user_name" placeholder="Your Name" required>
+            <input type="text" name="user_name" placeholder="Your Name" required>
 
-    <input type="email" name="user_email" placeholder="Your Email" required>
+            <input type="email" name="user_email" placeholder="Your Email" required>
 
-    <input type="tel" name="user_phone" placeholder="Your Phone">
+            <input type="tel" name="user_phone" placeholder="Your Phone">
 
-    <textarea name="message" placeholder="Your Message" required></textarea>
+            <textarea name="message" placeholder="Your Message" required></textarea>
 
-    <button type="submit">Send Message</button>
+            <button type="submit" data-i18n="contact_send">Send Message</button>
 
-    <p id="form-status"></p>
+            <p id="form-status"></p>
 
-</form>
-<div class="map-wrapper">
-    <div class="map-info">
-        <h3>PT. Bunga Laut Mandiri</h3>
-        <p>Jl. Pelabuhan Indonesia</p>
-        <p>Jakarta, Indonesia</p>
-    </div>
+        </form>
+        <div class="map-wrapper">
+            <div class="map-info">
+                <h3>PT. Bunga Laut Mandiri</h3>
+                <p>Jl. Pelabuhan Indonesia</p>
+                <p>Jakarta, Indonesia</p>
+            </div>
 
-    <div class="map-container">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.107454955002!2d106.88996347355886!3d-6.116234593870369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1f004fddbd27%3A0x3302ea983d58dd31!2sPT.%20BUNGA%20LAUT%20MANDIRI!5e0!3m2!1sen!2sid!4v1771689622048!5m2!1sen!2sid"
-            allowfullscreen=""
-            loading="lazy">
-        </iframe>
-    </div>
-</div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.107454955002!2d106.88996347355886!3d-6.116234593870369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1f004fddbd27%3A0x3302ea983d58dd31!2sPT.%20BUNGA%20LAUT%20MANDIRI!5e0!3m2!1sen!2sid!4v1771689622048!5m2!1sen!2sid"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
 
     </section>
 
-<footer class="footer">
-    <div class="footer-container">
+    <footer class="footer">
+        <div class="footer-container">
 
-        <!-- Company Info -->
-        <div class="footer-column">
-            <img src="img/BLM2.png" alt="Company Logo" class="footer-logo">
-            <h3>BungaLautMandiri</h3>
-            <p>
-                Perkantoran Yos Sudarso Megah Blok B12<br>
-                Jl. Yos Sudarso No. 1<br>
-                Tanjung Priok, Jakarta Utara 14130
-            </p>
+            <!-- Company Info -->
+            <div class="footer-column">
+                <img src="img/BLM2.png" alt="Company Logo" class="footer-logo">
+                <h3>BungaLautMandiri</h3>
+                <p>
+                    Perkantoran Yos Sudarso Megah Blok B12<br>
+                    Jl. Yos Sudarso No. 1<br>
+                    Tanjung Priok, Jakarta Utara 14130
+                </p>
 
-            <p>
-                <a href="tel:+622143902749">+62 21 43902749</a><br>
-                <a href="tel:+622143902750">+62 21 43902750</a>
-            </p>
+                <p>
+                    <a href="tel:+622143902749">+62 21 43902749</a><br>
+                    <a href="tel:+622143902750">+62 21 43902750</a>
+                </p>
 
-            <p>
-                <a href="mailto:shippingblm@gmail.com">
-                    shippingblm@gmail.com
-                </a>
-            </p>
+                <p>
+                    <a href="mailto:shippingblm@gmail.com">
+                        shippingblm@gmail.com
+                    </a>
+                </p>
+            </div>
+
+            <!-- Vessel Handling -->
+            <div class="footer-column">
+                <h4>Vessel Handling</h4>
+                <ul>
+                    <li>Break Bulkers / HLV</li>
+                    <li>Passengers Vessel / Cruiser</li>
+                    <li>Liquid Vessel / Tanker</li>
+                    <li>Naval Vessel</li>
+                    <li>Container Vessel</li>
+                    <li>Dry Bulk Vessel</li>
+                </ul>
+            </div>
+
+            <!-- Services -->
+            <div class="footer-column">
+                <h4>Kind of Service</h4>
+                <ul>
+                    <li>Ship Agency & Chartering</li>
+                    <li>Crew Manning</li>
+                    <li>Provision & Stores Suppliers</li>
+                    <li>Ship Broker</li>
+                    <li>Offshore Support</li>
+                </ul>
+            </div>
+
+            <!-- Branches -->
+            <div class="footer-column">
+                <h4>Branches</h4>
+                <ul class="branch-list">
+                    <li>Banten</li>
+                    <li>Surabaya</li>
+                    <li>Gresik</li>
+                    <li>Balikpapan</li>
+                    <li>Samarinda</li>
+                    <li>Palembang</li>
+                    <li>Banjarmasin</li>
+                    <li>Batam</li>
+                    <li>Kuala Tanjung</li>
+                    <li>Dumai</li>
+                    <li>Tanah Grogot</li>
+                    <li>Semarang</li>
+                    <li>Cilacap</li>
+                    <li>Panjang (Lampung)</li>
+                    <li>Makassar</li>
+                </ul>
+            </div>
+
         </div>
 
-        <!-- Vessel Handling -->
-        <div class="footer-column">
-            <h4>Vessel Handling</h4>
-            <ul>
-                <li>Break Bulkers / HLV</li>
-                <li>Passengers Vessel / Cruiser</li>
-                <li>Liquid Vessel / Tanker</li>
-                <li>Naval Vessel</li>
-                <li>Container Vessel</li>
-                <li>Dry Bulk Vessel</li>
-            </ul>
+        <div class="footer-bottom">
+            © 2024 BungaLautMandiri. All Rights Reserved.
         </div>
-
-        <!-- Services -->
-        <div class="footer-column">
-            <h4>Kind of Service</h4>
-            <ul>
-                <li>Ship Agency & Chartering</li>
-                <li>Crew Manning</li>
-                <li>Provision & Stores Suppliers</li>
-                <li>Ship Broker</li>
-                <li>Offshore Support</li>
-            </ul>
-        </div>
-
-        <!-- Branches -->
-        <div class="footer-column">
-            <h4>Branches</h4>
-            <ul class="branch-list">
-                <li>Banten</li>
-                <li>Surabaya</li>
-                <li>Gresik</li>
-                <li>Balikpapan</li>
-                <li>Samarinda</li>
-                <li>Palembang</li>
-                <li>Banjarmasin</li>
-                <li>Batam</li>
-                <li>Kuala Tanjung</li>
-                <li>Dumai</li>
-                <li>Tanah Grogot</li>
-                <li>Semarang</li>
-                <li>Cilacap</li>
-                <li>Panjang (Lampung)</li>
-                <li>Makassar</li>
-            </ul>
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
-        © 2024 BungaLautMandiri. All Rights Reserved.
-    </div>
-</footer>
+    </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script src="script.js"></script>
+
 </html>
