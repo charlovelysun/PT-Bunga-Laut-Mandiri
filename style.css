@@ -469,6 +469,58 @@ footer {
     cursor: pointer;
 }
 
+
+/* ================= VISI MISI ================= */
+
+#visi-misi{
+    padding:120px 50px;
+    text-align:center;
+
+}
+#visi-misi h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.visi-misi-container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+
+}
+
+.visi-box,
+.misi-box{
+    background: linear-gradient(145deg, #112a47, #0f2238);
+    padding:40px 30px;
+    border-radius:18px;
+    width:320px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.4);
+    transition:0.4s;
+    text-align:left;
+}
+
+.visi-box:hover,
+.misi-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(0,0,0,0.6);
+}
+
+.visi-box h3,
+.misi-box h3{
+    margin-bottom:15px;
+    color:#00bfff;
+}
+
+.misi-box ul{
+    padding-left:18px;
+}
+
+.misi-box li{
+    margin-bottom:8px;
+}
+
 /* ================= RESPONSIVE ================= */
 
 @media(max-width:768px) {

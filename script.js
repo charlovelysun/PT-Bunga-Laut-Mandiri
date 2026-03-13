@@ -161,12 +161,27 @@ const translations = {
         services_title: "Our Services",
         services_desc: "PT. Bunga Laut Mandiri is a full-service maritime agency with more than 15 years of experience in the Indonesian shipping industry.",
 
-        service_cruise: "Cruise Ship",
-        service_excursion: "Shore Excursions",
-        service_stevedoring: "Stevedoring",
-        service_forwarding: "Freight Forwarding",
-        service_agency: "Shipping Agency",
+        service_cruise: "Cargo Ship Services",
+        service_cruise_p1:"PT. Bunga Laut Mandiri provides cargo transportation services using cargo ships to support inter-island logistics and industrial project needs across Indonesia.This service is designed to provide a safe, efficient, and reliable maritime transportation solution for companies that require large-scale cargo delivery or project logistics support.",
+        
+        service_excursion: "Types of Vessels",
+        service_excursion_p1:"Our fleet consists of various types of vessels designed to support maritime transportation and logistics activities safely and efficiently.Motor Vessel (MV) – A cargo vessel used for transporting various types of goods such as general cargo, project materials, and inter-port logistics with large cargo capacity.Landing Craft Tank (LCT) – A vessel equipped with a ramp door at the bow, allowing easy loading and unloading of vehicles, heavy equipment, and project materials directly to docks or beaches.Crew Boat – A fast vessel used for transporting crew members and operational personnel to offshore work locations such as offshore terminals, platforms, and other maritime operational areas.Our fleet is operated by professional and experienced crew members and supported by high maritime safety standards to ensure safe, reliable, and timely sea transportation services.",
+        
+        service_stevedoring: "Types of Cargo",
+        service_stevedoring_p1:"We handle the transportation of various types of cargo including heavy equipment such as excavators, bulldozers, and cranes, project vehicles and trucks,construction materials, containers, general cargo, and industrial equipment required for project logistics operations.",
+        
+        service_forwarding: "Operational Areas",
+        service_forwarding_p1:"Our cargo transportation services cover various maritime regions across Indonesia including Sumatra, Java, Kalimantan, Sulawesi, and Eastern Indonesia.With a wide operational network, we are able to support logistics distribution to various ports and industrial areas throughout the country.",
+        service_agency: "Service Advantages",
+        service_agency_p1:"PT. Bunga Laut Mandiri is committed to providing professional and reliable cargo transportation services. Our fleet is well-maintained and ready for operation, supported by experienced and certified crew members. We ensure efficient loading and unloading processes while prioritizing safety and punctuality in every operational activity.",
 
+        visi_title:"Vision and Mission",
+        vision_name:"vision",
+        vision_text:"To become a trusted and professional shipping company in providing safe, efficient, and sustainable maritime transportation and logistics services in Indonesia.",
+        mission_name:"mission",
+        mission_1:"Developing competent, professional, and high-integrity human resources to support company growth.",
+        mission_2:"Operating high-quality vessels that comply with international maritime safety standards.",
+        mission_3:"Providing reliable, safe, and timely maritime transportation services to meet customer needs.",
         gallery_title: "Our Gallery",
 
         contact_title: "Contact Us",
@@ -196,25 +211,33 @@ const translations = {
         services_title: "Layanan Kami",
         services_desc: "PT. Bunga Laut Mandiri adalah agen maritim dengan pengalaman lebih dari 15 tahun di industri pelayaran Indonesia.",
 
-        service_cruise: "Kapal Pesiar",
-        service_cruise_p1: "PT. Bunga Laut Mandiri adalah agen layanan penuh yang memiliki tenaga profesional yang berkualitas dan berpengetahuan luas dengan pengalaman panjang di industri maritim, baik di laut maupun di darat.",
-        service_cruise_p2: "Sebagai agen pelabuhan tertua yang telah berdiri lebih dari 15 tahun, kami telah melayani semua jenis kapal, termasuk kapal pesiar. Tim kami yang berpengalaman dan multi-bahasa memberikan layanan penuh untuk kapal dan memastikan penanganan yang cepat serta efisien untuk semua detail yang terlibat dalam operasi kapal di pelabuhan Indonesia.",
+        service_cruise: "Layanan Kapal Kargo",
+        service_cruise_p1: "PT. Bunga Laut Mandiri menyediakan layanan pengangkutan barang menggunakan kapal kargo (Cargo Ship) untuk mendukung kebutuhan logistik antar pulau maupun berbagai proyek industri di seluruh wilayah Indonesia. Layanan ini dirancang untuk memberikan solusi transportasi laut yang aman, efisien, dan dapat diandalkan bagi perusahaan yang membutuhkan pengiriman barang dalam jumlah besar maupun kebutuhan logistik proyek.",
 
-        service_excursion: "Wisata Darat",
-        service_excursion_p1: "Nikmati tur pulau yang santai dengan bus eksekutif, rasakan berlayar yang mendebarkan di perairan biru jernih, bersnorkel atau menyelam di banyak terumbu yang penuh warna, mendaki melalui pegunungan, dan kagumi keajaiban geologi Indonesia.",
-        service_excursion_p2: "Kami menyediakan tur berkualitas tinggi dan sangat profesional untuk tamu Anda yang dapat disesuaikan dengan kebutuhan khusus Anda",
+        service_excursion: "Jenis Kapal",
+        service_excursion_p1: "Armada kami terdiri dari berbagai jenis kapal yang dirancang untuk mendukung kegiatan transportasi laut dan logistik maritim secara aman dan efisien.Motor Vessel (MV) – Kapal kargo yang digunakan untuk pengangkutan berbagai jenis barang seperti general cargo, material proyek, dan logistik antar pelabuhan dengan kapasitas muatan yang besar.Landing Craft Tank (LCT) – Kapal yang dilengkapi dengan ramp door di bagian depan sehingga memudahkan proses bongkar muat kendaraan, alat berat, dan material proyek langsung ke dermaga maupun pantai.Crew Boat – Kapal cepat yang digunakan untuk transportasi kru dan personel operasional menuju lokasi kerja di laut seperti terminal offshore, platform, dan area operasional maritim.Armada kami dioperasikan oleh crew profesional dan berpengalaman, serta didukung dengan standar keselamatan pelayaran yang tinggi untuk memastikan layanan transportasi laut yang aman, tepat waktu, dan terpercaya.",
 
-        service_stevedoring: "Stevedoring",
-        service_stevedoring_p1: "PT. Bunga Laut Mandiri menyediakan layanan stevedoring terpadu kepada klien industri di seluruh wilayah, dilengkapi dengan peralatan bongkar/muat yang disesuaikan dengan kondisi kargo.",
-        service_stevedoring_p2: "Bersama dengan perusahaan anak kami, bongkar muat adalah sebuah disiplin yang membutuhkan dukungan dari elemen lain dalam lingkup keseluruhan industri transportasi.",
 
-        service_forwarding: "Pengiriman Barang",
-        service_forwarding_p1: "Kami mengontrak dengan perusahaan pengangkut untuk memfasilitasi pergerakan barang.",
-        service_forwarding_p2: "Kargo dapat dipesan pada berbagai jenis pengangkut.",
+        service_stevedoring: "Jenis Muatan",
+        service_stevedoring_p1: "Kami melayani pengangkutan berbagai jenis muatan seperti alat berat (excavator,bulldozer, crane), kendaraan proyek dan truk operasional, material konstruksi,container, serta berbagai jenis general cargo dan peralatan industri yang dibutuhkan dalam kegiatan logistik proyek.",
 
-        service_agency: "Agen Pelayaran",
-        service_agency_p1: "Layanan Agen Pengiriman melibatkan pelaksanaan operasi yang berkaitan dengan penumpang, kargo, pemeliharaan, pasokan, pergantian awak, dan lainnya",
-        service_agency_p2: "Kami berpengalaman dalam menangani formalitas bea cukai, kepabeanan, dan logistik untuk arus barang.",
+
+        service_forwarding: "Area Operasi",
+        service_forwarding_p1: "Layanan pengangkutan kami mencakup berbagai wilayah pelayaran di Indonesia termasuk Sumatera, Jawa, Kalimantan, Sulawesi, serta kawasan Indonesia Timur.Dengan jaringan operasional yang luas, kami mampu mendukung distribusi logistik ke berbagai pelabuhan dan wilayah industri di Indonesia.",
+
+
+        service_agency: "Keunggulan Layanan",
+        service_agency_p1: "PT. Bunga Laut Mandiri berkomitmen untuk memberikan layanan pengangkutancargo yang profesional dan dapat diandalkan. Armada kapal kami selalu dalam kondisi terawat dan siap operasi, didukung oleh crew kapal yang berpengalaman dan bersertifikasi. Kami juga memastikan proses bongkar muat dilakukan secara efisien dengan mengutamakan keselamatan dan ketepatan waktu dalam setiap kegiatan operasional.",
+
+        visi_title: "Visi dan Misi",
+        vision_name: "Visi",
+        vision_text: "Menjadi perusahaan pelayaran yang terpercaya dan profesional dalam menyediakan layanan transportasi laut dan logistik maritim yang aman, efisien, dan berkelanjutan di Indonesia.",
+
+        mission_name: "Misi",
+        mission_1: "Mengembangkan sumber daya manusia yang kompeten, profesional, dan berintegritas untuk mendukung pertumbuhan perusahaan.",
+        mission_2: "Mengoperasikan armada kapal yang berkualitas dan memenuhi standar keselamatan pelayaran internasional.",
+        mission_3: "Menyediakan layanan transportasi laut yang handal, aman, dan tepat waktu untuk memenuhi kebutuhan pelanggan.",
+        
         gallery_title: "Galeri Kami",
 
         contact_title: "Hubungi Kami",
