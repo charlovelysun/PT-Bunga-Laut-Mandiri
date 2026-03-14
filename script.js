@@ -2,7 +2,7 @@
 // EMAILJS INIT
 // =======================
 (function () {
-    emailjs.init("K03XaO_pdl9X1yo-a");
+    emailjs.init("7H9j1utUHTg7qGEzk");
 })();
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -79,8 +79,8 @@ document.addEventListener("DOMContentLoaded", function () {
             status.style.color = "white";
 
             emailjs.sendForm(
-                "service_m9qtywf",
-                "template_smawvda",
+                "service_tcoay9s",
+                "template_l9y69s9",
                 this
             )
                 .then(function () {
