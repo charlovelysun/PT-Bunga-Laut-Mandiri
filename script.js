@@ -159,7 +159,7 @@ const translations = {
         about_support: "Operational Support",
 
         services_title: "Our Services",
-        services_desc: "PT. Bunga Laut Mandiri is a full-service maritime agency with more than 15 years of experience in the Indonesian shipping industry.",
+        services_desc: "PT. Bunga Laut Mandiri is a full-service maritime agency with over 10 years of experience in the Indonesian shipping industry. We provide integrated services for various types of ships and logistics needs with a professional multilingual team.",
 
         service_cruise: "Cargo Ship Services",
         service_cruise_p1:"PT. Bunga Laut Mandiri provides cargo transportation services using cargo ships to support inter-island logistics and industrial project needs across Indonesia.This service is designed to provide a safe, efficient, and reliable maritime transportation solution for companies that require large-scale cargo delivery or project logistics support.",
@@ -209,7 +209,7 @@ const translations = {
         about_support: "Dukungan Operasional",
 
         services_title: "Layanan Kami",
-        services_desc: "PT. Bunga Laut Mandiri adalah agen maritim dengan pengalaman lebih dari 15 tahun di industri pelayaran Indonesia.",
+        services_desc: "PT. Bunga Laut Mandiri adalah agen maritim layanan lengkap dengan pengalaman lebih dari 10 tahun di industri pelayaran Indonesia. Kami menyediakan layanan terintegrasi untuk berbagai jenis kapal dan kebutuhan logistik dengan tim profesional yang multibahasa.",
 
         service_cruise: "Layanan Kapal Kargo",
         service_cruise_p1: "PT. Bunga Laut Mandiri menyediakan layanan pengangkutan barang menggunakan kapal kargo (Cargo Ship) untuk mendukung kebutuhan logistik antar pulau maupun berbagai proyek industri di seluruh wilayah Indonesia. Layanan ini dirancang untuk memberikan solusi transportasi laut yang aman, efisien, dan dapat diandalkan bagi perusahaan yang membutuhkan pengiriman barang dalam jumlah besar maupun kebutuhan logistik proyek.",
@@ -295,3 +295,66 @@ document.addEventListener("click", function (e) {
 
 });
 
+// apa aja
+const images = document.querySelectorAll(".gallery-item img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+const nextBtn = document.querySelector(".lightbox-next");
+const prevBtn = document.querySelector(".lightbox-prev");
+const closeBtn = document.querySelector(".close");
+
+let index = 0;
+
+images.forEach((img,i)=>{
+    img.addEventListener("click",()=>{
+        index = i;
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+    });
+});
+
+nextBtn.onclick = ()=>{
+    index++;
+    if(index >= images.length) index = 0;
+    lightboxImg.src = images[index].src;
+};
+
+prevBtn.onclick = ()=>{
+    index--;
+    if(index < 0) index = images.length-1;
+    lightboxImg.src = images[index].src;
+};
+
+closeBtn.onclick = ()=>{
+    lightbox.style.display = "none";
+};
+
+
+// wa button
+function chatWA() {
+    const nama = document.querySelector('input[name="user_name"]').value;
+    const email = document.querySelector('input[name="user_email"]').value;
+    const pesanUser = document.querySelector('textarea[name="message"]').value;
+
+    const nomor = "6282112715150";
+
+    const pesan = `Halo PT Bunga Laut Mandiri,
+Nama: ${nama}
+Email: ${email}
+Pesan: ${pesanUser}`;
+
+    const url = `https://wa.me/${nomor}?text=${encodeURIComponent(pesan)}`;
+
+    window.open(url, "_blank");
+}
+
+// bikin scorl jadi mulus di website
+window.addEventListener('scroll', function(){
+    const header = document.querySelector('header');
+    if(window.scrollY > 50){
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});

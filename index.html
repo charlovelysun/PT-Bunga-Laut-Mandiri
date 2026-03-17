@@ -14,7 +14,53 @@
         content="shipping agency indonesia, freight forwarding indonesia, maritime logistics indonesia, PT Bunga Laut Mandiri">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="img-gallery/BLM2.png">
+    <link rel="icon" type="image/png" href="img-galery/BLM2.png">
+    <script type="application/ld+json">
+        {
+        "@context":"https://schema.org",
+        "@type":"SiteNavigationElement",
+        "name":["Home","About","Services","Gallery","Contact"],
+        "url":[
+        "https://ptbungalaut.com/#home",
+        "https://ptbungalaut.com/#about",
+        "https://ptbungalaut.com/#services",
+        "https://ptbungalaut.com/#gallery",
+        "https://ptbungalaut.com/#contact"
+        ]
+        }
+     </script>
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "PT Bunga Laut Mandiri",
+    "url": "https://ptbungalaut.com",
+    "logo": "https://ptbungalaut.com/img-gallery/BLM2.png",
+    "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+6282112715150",
+    "contactType": "customer service"
+    }
+    }
+</script>
+
+    <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "LocalBusiness",
+ "name": "PT Bunga Laut Mandiri",
+ "image": "https://ptbungalaut.com/img-gallery/BLM2.png",
+ "address": {
+   "@type": "PostalAddress",
+   "streetAddress": "Jl. Yos Sudarso No. 1",
+   "addressLocality": "Jakarta Utara",
+   "addressCountry": "ID"
+ },
+ "telephone": "+6282112715150",
+ "url": "https://ptbungalaut.com"
+}
+</script>
 </head>
 
 <body>
@@ -56,10 +102,10 @@
         <div class="hero-container">
 
             <div class="hero-text">
-                <h1 data-i18n="hero_title">Solusi Logistik & Maritime Profesional</h1>
+                <h1 data-i18n="hero_title">Professional Logistics & Maritime Solutions</h1>
                 <p data-i18n="hero_text">
-                    Kami menyediakan layanan pelabuhan, pengiriman, dan manajemen logistik
-                    dengan standar internasional dan tim berpengalaman.
+                    We provide port, shipping, and logistics management services with international standards and an
+                    experienced team.
                 </p>
                 <a href="#services" class="hero-btn" data-i18n="hero_button">Lihat Layanan</a>
             </div>
@@ -91,15 +137,15 @@
                 <h2 data-i18n="about_title">About PT. Bunga Laut Mandiri</h2>
 
                 <p data-i18n="about_p1">
-                    PT. Bunga Laut Mandiri adalah perusahaan yang bergerak di bidang transportasi laut dan layanan
-                    logistik maritim yang berkomitmen menyediakan solusi pengangkutan yang aman, efisien, dan
-                    terpercaya.
+                    PT. BUNGA LAUT MANDIRI is comprised of experienced professionals with strong expertise in the
+                    maritime and logistics industry. We are committed to safeguarding our clients’ interests
+                    and delivering reliable, high-quality shipping solutions.
                 </p>
 
                 <p data-i18n="about_p2">
-                    Didukung oleh armada kapal seperti Motor Vessel (MV), Landing Craft Tank (LCT), dan Crew Boat, kami
-                    melayani berbagai kebutuhan pengangkutan cargo, material proyek, serta transportasi kru di berbagai
-                    wilayah perairan Indonesia.
+                    With over 10 years of management experience, we understand the complexity and competitiveness of the
+                    maritime sector.We proactively anticipate challenges and provide tailored solutions that ensure
+                    efficiency and operational excellence.
 
                 </p>
 
@@ -251,19 +297,19 @@
             </div>
 
             <div class="gallery-item">
-                <img src="img-galery-new/foto 5.jepg.jpeg" alt="Gallery Image 5">
+                <img src="img-galery-new/foto 5.jpeg" alt="Gallery Image 5">
             </div>
 
             <div class="gallery-item">
-                <img src="img-galery-new/foto 6.jpeg" alt="Gallery Image 7">
+                <img src="img-galery-new/foto 6.jpeg" alt="Gallery Image 6">
             </div>
 
             <div class="gallery-item">
-                <img src="img-galery-new/foto 7.jepg.jpeg" alt="Gallery Image 8">
+                <img src="img-galery-new/foto 7.jpeg" alt="Gallery Image 7">
             </div>
 
             <div class="gallery-item">
-                <img src="img-galery-new/foto 8.JPG" alt="Gallery Image 9">
+                <img src="img-galery-new/foto 8.JPG" alt="Gallery Image 8">
             </div>
 
             <div class="gallery-item">
@@ -292,7 +338,13 @@
 
         </div>
     </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" id="lightbox-img">
 
+        <button class="lightbox-prev">&#10094;</button>
+        <button class="lightbox-next">&#10095;</button>
+    </div>
 
 
     <section id="contact">
@@ -309,9 +361,10 @@
 
             <button type="submit" data-i18n="contact_send">Send Message</button>
 
-            <p id="form-status"></p>
-
         </form>
+        <button class="wa-btn" onclick="chatWA()" >Chat WhatsApp</button>
+
+        <p id="form-status"></p>
         <div class="map-wrapper">
             <div class="map-info">
                 <h3>PT. Bunga Laut Mandiri</h3>

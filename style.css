@@ -11,10 +11,11 @@ body {
     line-height: 1.6;
     background: #0a1f33;
     color: white;
-    padding-top: 90px;
+    padding-top: 70px;
 }
-html{
-scroll-behavior:smooth;
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* ================= HEADER ================= */
@@ -32,6 +33,10 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
+}
+header.scrolled {
+    padding: 8px 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 }
 
 /* ================= LOGO ================= */
@@ -380,6 +385,7 @@ footer {
     color: #ccc;
     font-size: 14px;
 }
+
 .footer-column ul {
     list-style: none;
     padding: 0;
@@ -391,15 +397,15 @@ footer {
 
 /* ================= LANGUAGE ================= */
 
-.language-dropdown{
+.language-dropdown {
     position: relative;
     margin-left: 20px;
 }
 
 /* tombol utama */
-.lang-btn{
+.lang-btn {
     background: transparent;
-    border: 1px solid rgba(255,255,255,0.4);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     color: white;
     padding: 6px 12px;
     border-radius: 6px;
@@ -411,43 +417,43 @@ footer {
     transition: 0.3s;
 }
 
-.lang-btn:hover{
-    background:#00bfff;
+.lang-btn:hover {
+    background: #00bfff;
 }
 
 /* dropdown */
-.lang-menu{
+.lang-menu {
     position: absolute;
-    top:110%;
-    left:0;
-    background:#081726;
-    border-radius:6px;
-    display:none;
-    flex-direction:column;
-    width:130px;
-    overflow:hidden;
-    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+    top: 110%;
+    left: 0;
+    background: #081726;
+    border-radius: 6px;
+    display: none;
+    flex-direction: column;
+    width: 130px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 /* tombol bahasa */
-.lang-menu button{
-    background:none;
-    border:none;
-    color:white;
-    padding:8px 12px;
+.lang-menu button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 8px 12px;
     text-align: center;
-    font-size:14px;
-    cursor:pointer;
-    width:100%;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
 }
 
-.lang-menu button:hover{
-    background:#00bfff;
+.lang-menu button:hover {
+    background: #00bfff;
 }
 
 /* aktif */
-.lang-menu.show{
-    display:flex;
+.lang-menu.show {
+    display: flex;
 }
 
 /* ================= MOBILE LANGUAGE ================= */
@@ -475,53 +481,117 @@ footer {
 
 /* ================= VISI MISI ================= */
 
-#visi-misi{
-    padding:120px 50px;
-    text-align:center;
+#visi-misi {
+    padding: 120px 50px;
+    text-align: center;
 
 }
-#visi-misi h2{
+
+#visi-misi h2 {
     margin-bottom: 40px;
     font-size: 30px;
 }
 
-.visi-misi-container{
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    flex-wrap:wrap;
+.visi-misi-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
 
 }
 
 .visi-box,
-.misi-box{
+.misi-box {
     background: linear-gradient(145deg, #112a47, #0f2238);
-    padding:40px 30px;
-    border-radius:18px;
-    width:320px;
-    box-shadow:0 15px 35px rgba(0,0,0,0.4);
-    transition:0.4s;
-    text-align:left;
+    padding: 40px 30px;
+    border-radius: 18px;
+    width: 320px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    transition: 0.4s;
+    text-align: left;
 }
 
 .visi-box:hover,
-.misi-box:hover{
-    transform:translateY(-10px);
-    box-shadow:0 20px 45px rgba(0,0,0,0.6);
+.misi-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
 }
 
 .visi-box h3,
-.misi-box h3{
-    margin-bottom:15px;
-    color:#00bfff;
+.misi-box h3 {
+    margin-bottom: 15px;
+    color: #00bfff;
 }
 
-.misi-box ul{
-    padding-left:18px;
+.misi-box ul {
+    padding-left: 18px;
 }
 
-.misi-box li{
-    margin-bottom:8px;
+.misi-box li {
+    margin-bottom: 8px;
+}
+
+/* buat geser galery */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.lightbox-prev {
+    left: 30px;
+}
+
+.lightbox-next {
+    right: 30px;
+}
+
+.wa-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 60px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.wa-btn:hover {
+    background-color: #1ebe5d;
 }
 
 /* ================= RESPONSIVE ================= */
@@ -530,6 +600,11 @@ footer {
 
     header {
         padding: 15px 20px;
+    }
+
+    body {
+        padding-top: 65px;
+        /* header lebih kecil di HP */
     }
 
     nav {
